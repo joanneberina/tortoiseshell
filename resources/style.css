@@ -1,0 +1,587 @@
+html {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.4;
+}
+
+/* Header contains the navigation and text overlay */
+header {
+    display: flex;
+    width: 100%;
+    background-image: url(./images/glasses-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* flex site container */
+.maincontainer {
+    display: block;
+    max-width: 53.5rem;
+    margin: 0 auto;
+}
+
+.headercontainer {
+    display: block;
+    max-width: 53.5rem;
+    margin: 0 auto;
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.logo-container {
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    color: white;
+    margin: 1rem auto 1rem 2rem;
+}
+
+.logo-container img {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.logo-container span {
+    font-size: 1rem;
+}
+
+/* text-overlay */
+.overlay {
+    background-color: white;
+}
+
+.overlay h1 {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* service */
+.cards {
+    width: 5rem;
+    margin: auto 3rem;
+}
+
+.cards img {
+    width: 5rem;
+    height: auto;
+}
+
+.cards>div {
+    display: inline-block;
+}
+
+#papericon {
+    width: 3.5rem;
+    height: auto;
+}
+
+.label {
+    height: auto;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+/* blurb */
+.text h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: cadetblue;
+
+}
+
+/* footer */
+footer {
+    background-color: azure;
+    padding: 4rem;
+}
+
+#logo-copy img {
+    height: 1.5rem;
+    width: auto;
+}
+
+
+/* for mobile */
+@media only screen and (max-width: 520px) {
+    #desktop {
+        display: none;
+    }
+
+    header {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    /* navigation */
+   #mobile {
+       display: inline-flex;
+   }
+
+   #mobilenav {
+        display: inline-flex;
+        align-items: center;
+        color: white;
+        margin-right: 2rem;
+   }
+
+   .headercontainer {
+        width: 100%;
+    }
+
+   /* text overlay */
+   .overlay { 
+        text-align: center;
+        margin-top: 9rem;
+    }
+
+    .overlay h1 {
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* icons */
+    .service {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.77rem;
+        margin-bottom: 2.23rem;        
+    }
+
+    .cards {
+        display: block;
+        text-align: center;
+        margin-bottom: 1.54rem;
+    }
+
+    .label {
+        font-size: 0.77rem;
+    }
+
+     /* blurb */
+    .text {
+        margin-bottom: 4rem;
+    }
+
+    .text h3 {
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 0.77rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* footer */
+    #logo-copy span {
+        display: none;
+    }
+  
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* smaller tablet */
+@media only screen and (min-width: 521px) and (max-width: 679px) {
+    #desktop {
+        display: none;
+    }
+
+    header {
+        height: 22rem;
+        background-position: 30%
+    }
+
+    .headercontainer {
+        width: 100%;
+    }
+
+    /* navigation */
+    #mobile {
+        display: inline-flex;
+    }
+ 
+    #mobilenav {
+         display: inline-flex;
+         align-items: center;
+         color: white;
+         margin-right: 2rem;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    /* text overlay */
+    .overlay {
+        float: right;
+        margin-top: 12rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;
+    }
+
+    /* icons */
+    .service {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2.5rem;
+    }
+
+    .cards>img {
+        margin-top: 0 auto;
+    }
+
+     /* blurb */
+    #blurb {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    }
+
+    .text {
+        display: inline-block;
+        width: 35%;
+        margin: 0 2.5%;
+    }
+
+    .text h3 {
+        width: 10rem;
+        padding-left: 1.25rem;
+    }
+
+    /* footer */
+    #logo-copy {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-copy img {
+        margin-right: 1rem;
+    }
+}
+
+/* for tablet */
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+    #mobile {
+        display: none;
+    }
+
+    header {
+        height: 22rem;
+        background-position: 30%
+    }
+
+    .headercontainer {
+        width: 53.5rem;
+    }
+
+    /* navigation */
+    #desktopnav {
+        display: inline-flex;
+        color: white;
+    }
+
+    #desktopnav ul {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #desktopnav span {
+        padding-right: 2rem;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    /* text overlay */
+    .overlay {
+        float: right;
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;
+    }
+
+    /* icons */
+    .service {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    .cards>img {
+        margin-top: 0 auto;
+    }
+
+     /* blurb */
+    #blurb {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;  
+    }
+
+    .text {
+        display: inline-block;
+        width: 35%;
+        margin: 0 2.5%;
+    }
+
+    .text h3 {
+        width: 10rem;
+        padding-left: 1.25rem;
+    }
+
+    /* footer */
+    #logo-copy {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-copy img {
+        margin-right: 1rem;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 2100px) {
+    #mobile {
+        display: none;
+    }
+
+    header {
+        height: 30rem;
+        background-size: cover;
+        background-position: 40%;
+    }
+
+    .headercontainer {
+        width: 53.5rem;
+    }
+
+    /* navigation */
+    #desktopnav {
+        display: inline-flex;
+        color: white;
+    }
+
+    #desktopnav ul {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #desktopnav span {
+        padding-right: 2rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    /* text overlay */
+    .overlay {
+        float: right;
+        margin-top: 10rem;
+        margin-right: -2rem;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+        padding: 1.5rem 5rem;
+    }
+
+    /* icons */
+    .service {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    .cards>img {
+        margin-top: 0 auto;
+    }
+
+     /* blurb */
+    #blurb {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .text {
+        display: inline-block;
+        width: 35%;
+        margin: 0 2.5%;
+    }
+
+    .text h3 {
+        width: 10rem;
+        padding-left: 1.25rem;
+    }
+
+
+    
+    /* footer */
+    #logo-copy {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-copy img {
+        margin-right: 1rem;
+    }
+}
+
+/* extra large screen */
+@media only screen and (min-width: 2101px) {
+    #mobile {
+        display: none;
+    }
+
+    header {
+        height: 34rem;
+        background-size: cover;
+        background-position: 40%;
+    }
+
+    .headercontainer {
+        width: 53.5rem;
+    }
+
+    /* navigation */
+    #desktopnav {
+        display: inline-flex;
+        color: white;
+    }
+
+    #desktopnav ul {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #desktopnav span {
+        padding-right: 2rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    /* text overlay */
+    .overlay {
+        float: right;
+        margin-top: 10rem;
+        margin-right: -2rem;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+        padding: 1.5rem 5rem;
+    } 
+
+    /* icons */
+    .service {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    .cards>img {
+        margin-top: 0 auto;
+    }
+
+     /* blurb */
+    #blurb {
+        display: flex;
+        justify-content: center;
+        margin: 3rem auto 5rem auto;
+    }
+
+    .text {
+        display: inline-block;
+        width: 35%;
+        margin: 0 2.5%;
+    }
+
+    .text h3 {
+        width: 10rem;
+        padding-left: 1.25rem;
+    }
+
+    /* footer */
+    #logo-copy img {
+        margin-right: 1rem;
+    }
+}
